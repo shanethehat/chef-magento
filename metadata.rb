@@ -13,8 +13,8 @@ depends "database", "> 1.3.0"
 depends "apache2"
 depends "memcached"
 # depends "redis" # This Opscode cookbook has an error
-suggests "chef-varnish"
-suggests "solr"
+depends "chef-varnish"
+depends "solr"
 
 %w{ ubuntu }.each do |os|
   supports os
